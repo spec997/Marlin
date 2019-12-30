@@ -248,7 +248,7 @@ void process_lcd_p_command(const char* command) {
         ExtUI::stopPrint();
         write_to_lcd_P(PSTR("{SYS:STARTED}"));
         break;
-    case 'H': queue.enqueue_now_P(PSTR("G28")); break; // Home all axes
+    case 'H': queue.enqueue_now_P(G28_STR); break; // Home all axes
     default: {
       #if ENABLED(SDSUPPORT)
         // Print file 000 - a three digit number indicating which
@@ -396,8 +396,8 @@ void update_usb_status(const bool forceUpdate) {
   // This is mildly different than stock, which
   // appears to use the usb discovery status.
   // This is more logical.
-  if (last_usb_connected_status != SerialUSB || forceUpdate) {
-    last_usb_connected_status = SerialUSB;
+  if (last_usb_connected_status != MYSERIAL0 || forceUpdate) {
+    last_usb_connected_status = MYSERIAL0;
     write_to_lcd_P(last_usb_connected_status ? PSTR("{R:UC}\r\n") : PSTR("{R:UD}\r\n"));
   }
 }
