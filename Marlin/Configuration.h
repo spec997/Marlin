@@ -494,7 +494,7 @@
   #define DEFAULT_Kp 18
   #define DEFAULT_Ki 1.3
   #define DEFAULT_Kd 61
-  
+
 #endif // PIDTEMP
 
 //===========================================================================
@@ -801,7 +801,7 @@
  *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-  #define JUNCTION_DEVIATION_MM 0.030 // (mm) Distance from real junction edge
+  #define JUNCTION_DEVIATION_MM 0.025 // (mm) Distance from real junction edge
 #endif
 
 /**
