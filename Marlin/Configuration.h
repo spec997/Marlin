@@ -2079,6 +2079,7 @@
 // FSMC display (MKS Robin, Alfawise U20, JGAurora A5S, REXYZ A1, etc.)
 //
 #define FSMC_GRAPHICAL_TFT
+#define FSMC_UPSCALE 3
 
 //=============================================================================
 //============================  Other Controllers  ============================
