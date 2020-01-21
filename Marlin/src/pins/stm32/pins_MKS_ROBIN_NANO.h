@@ -131,31 +131,31 @@
   //
 
   #ifndef X_SERIAL_TX_PIN
-    #define X_SERIAL_TX_PIN  PB2 //LED_PIN
+    #define X_SERIAL_TX_PIN  PA6 //E1_STEP_PIN
   #endif
   #ifndef X_SERIAL_RX_PIN
-    #define X_SERIAL_RX_PIN  PE6 //MAX6675_SS_PIN
+    #define X_SERIAL_RX_PIN  PA1 //E1_DIR_PIN
   #endif
 
   #ifndef Y_SERIAL_TX_PIN
-    #define Y_SERIAL_TX_PIN  PB2 //LED_PIN
+    #define Y_SERIAL_TX_PIN  PA6 //E1_STEP_PIN
   #endif
   #ifndef Y_SERIAL_RX_PIN
-    #define Y_SERIAL_RX_PIN  PE6 //MAX6675_SS_PIN
+    #define Y_SERIAL_RX_PIN  PA1 //E1_DIR_PIN
   #endif
 
   #ifndef Z_SERIAL_TX_PIN
-    #define Z_SERIAL_TX_PIN  PB2 //LED_PIN
+    #define Z_SERIAL_TX_PIN  PA6 //E1_STEP_PIN
   #endif
   #ifndef Z_SERIAL_RX_PIN
-    #define Z_SERIAL_RX_PIN  PE6 //MAX6675_SS_PIN
+    #define Z_SERIAL_RX_PIN  PA1 //E1_DIR_PIN
   #endif
 
   #ifndef E0_SERIAL_TX_PIN
-    #define E0_SERIAL_TX_PIN PB2 //LED_PIN
+    #define E0_SERIAL_TX_PIN PA6 //E1_STEP_PIN
   #endif
   #ifndef E0_SERIAL_RX_PIN
-    #define E0_SERIAL_RX_PIN PE6 //MAX6675_SS_PIN
+    #define E0_SERIAL_RX_PIN PA1 //E1_DIR_PIN
   #endif
 #endif
 
