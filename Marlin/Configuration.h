@@ -493,9 +493,14 @@
   //#define DEFAULT_Kd 440
 
   // Sapphire Pro stock hotend AutoTuned
-  #define DEFAULT_Kp 18
-  #define DEFAULT_Ki 1.3
-  #define DEFAULT_Kd 61
+  //#define DEFAULT_Kp 18
+  //#define DEFAULT_Ki 1.3
+  //#define DEFAULT_Kd 61
+
+  // Sapphire Pro stock hotend with PT100 AutoTuned
+  #define DEFAULT_Kp 16
+  #define DEFAULT_Ki 3
+  #define DEFAULT_Kd 22
 
 #endif // PIDTEMP
 
