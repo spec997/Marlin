@@ -380,6 +380,7 @@
  *    15 : 100k thermistor calibration for JGAurora A5 hotend
  *    18 : ATC Semitec 204GT-2 (4.7k pullup) Dagoma.Fr - MKS_Base_DKU001327
  *    20 : Pt100 with circuit in the Ultimainboard V2.x
+ *    21 : Pt100 with circuit on 32 bit mcu
  *   201 : Pt100 with circuit in Overlord, similar to Ultimainboard V2.x
  *    60 : 100k Maker's Tool Works Kapton Bed Thermistor beta=3950
  *    61 : 100k Formbot / Vivedino 3950 350C thermistor 4.7k pullup
@@ -406,7 +407,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 147 // I'm using PT100. Set 1 for stock thermistor
+#define TEMP_SENSOR_0 21 // I'm using PT100. Set 1 for stock thermistor
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -504,9 +505,9 @@
   //#define DEFAULT_Kd 61
 
   // Sapphire Pro stock hotend with PT100 AutoTuned
-  #define DEFAULT_Kp 16
-  #define DEFAULT_Ki 3
-  #define DEFAULT_Kd 22
+  #define DEFAULT_Kp 16.61
+  #define DEFAULT_Ki 2.41
+  #define DEFAULT_Kd 28.63
 
 #endif // PIDTEMP
 
