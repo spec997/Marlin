@@ -407,7 +407,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 21 // I'm using PT100. Set 1 for stock thermistor
+#define TEMP_SENSOR_0 20 // I'm using PT100. Set 1 for stock thermistor
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -504,10 +504,10 @@
   //#define DEFAULT_Ki 1.3
   //#define DEFAULT_Kd 61
 
-  // Sapphire Pro stock hotend with PT100 AutoTuned
-  #define DEFAULT_Kp 16.61
-  #define DEFAULT_Ki 2.41
-  #define DEFAULT_Kd 28.63
+  // Sapphire Pro stock hotend with PT100 manually tuned
+  #define DEFAULT_Kp 19
+  #define DEFAULT_Ki 2
+  #define DEFAULT_Kd 180
 
 #endif // PIDTEMP
 
