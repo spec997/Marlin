@@ -188,6 +188,8 @@
   #include "ramps/pins_TANGO.h"                 // ATmega2560                             env:mega2560
 #elif MB(MKS_GEN_L_V2)
   #include "ramps/pins_MKS_GEN_L_V2.h"          // ATmega2560                             env:mega2560
+#elif MB(COPYMASTER_3D)
+  #include "ramps/pins_COPYMASTER_3D.h"         // ATmega2560                             env:mega2560
 
 //
 // RAMBo and derivatives
@@ -314,7 +316,7 @@
 #elif MB(OMCA)
   #include "sanguino/pins_OMCA.h"               // ATmega644P, ATmega644                  env:sanguino644p
 #elif MB(ANET_10)
-  #include "sanguino/pins_ANET_10.h"            // ATmega1284P                            env:melzi env:melzi_optiboot
+  #include "sanguino/pins_ANET_10.h"            // ATmega1284P                            env:sanguino1284p
 #elif MB(SETHI)
   #include "sanguino/pins_SETHI.h"              // ATmega644P, ATmega644, ATmega1284P     env:sanguino644p env:sanguino1284p
 
