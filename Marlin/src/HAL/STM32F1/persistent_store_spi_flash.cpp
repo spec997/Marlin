@@ -3,7 +3,7 @@
 
 #if BOTH(EEPROM_SETTINGS, SPI_FLASH_EEPROM_EMULATION)
 
-    #include "../shared/persistent_store_api.h"
+    #include "../shared/eeprom_api.h"
     #include <SPI.h>
     #include "spi_flash.h"
 
