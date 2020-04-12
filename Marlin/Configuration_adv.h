@@ -2348,7 +2348,14 @@
    *   stepperY.intpol(0); \
    * }
    */
-  #define TMC_ADV() {  }
+   #define TMC_ADV() { \
+     stepperX.hend(-3); \
+     stepperX.hstrt(1); \
+     stepperX.pwm_grad(5); \
+     stepperY.hend(-3); \
+     stepperY.hstrt(1); \
+     stepperY.pwm_grad(5); \
+    }
 
 #endif // HAS_TRINAMIC_CONFIG
 
