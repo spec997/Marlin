@@ -25,7 +25,7 @@
  * Traditional Chinese
  *
  * LCD Menu Messages
- * See also http://marlinfw.org/docs/development/lcd_language.html
+ * See also https://marlinfw.org/docs/development/lcd_language.html
  *
  */
 namespace Language_zh_TW {
@@ -184,8 +184,8 @@ namespace Language_zh_TW {
   PROGMEM Language_Str MSG_UBL_STORAGE_SLOT                = _UxGT("存儲槽");     // "Memory Slot"
   PROGMEM Language_Str MSG_UBL_LOAD_MESH                   = _UxGT("裝載熱床網格");     // "Load Bed Mesh"
   PROGMEM Language_Str MSG_UBL_SAVE_MESH                   = _UxGT("保存熱床網格");     // "Save Bed Mesh"
-  PROGMEM Language_Str MSG_MESH_LOADED                     = _UxGT("M117 網格 %i 已裝載");     // "Mesh %i loaded"
-  PROGMEM Language_Str MSG_MESH_SAVED                      = _UxGT("M117 網格 %i 已保存");     // "Mesh %i saved"
+  PROGMEM Language_Str MSG_MESH_LOADED                     = _UxGT("網格 %i 已裝載");     // "Mesh %i loaded"
+  PROGMEM Language_Str MSG_MESH_SAVED                      = _UxGT("網格 %i 已保存");     // "Mesh %i saved"
   PROGMEM Language_Str MSG_UBL_NO_STORAGE                  = _UxGT("沒有存儲");     // "No storage"
   PROGMEM Language_Str MSG_UBL_SAVE_ERROR                  = _UxGT("錯誤: UBL保存");     // "Err: UBL Save"
   PROGMEM Language_Str MSG_UBL_RESTORE_ERROR               = _UxGT("錯誤: UBL還原");     // "Err: UBL Restore"
@@ -552,7 +552,7 @@ namespace Language_zh_TW {
   //
   #if LCD_HEIGHT >= 4
     PROGMEM Language_Str MSG_ADVANCED_PAUSE_WAITING        = _UxGT(MSG_2_LINE("按下按鈕", "恢復列印")); //"Press Button to resume print"
-    PROGMEM Language_Str MSG_PAUSE_PRINT_INIT              = _UxGT(MSG_1_LINE("停車中 ..."));   //"Parking..."
+    PROGMEM Language_Str MSG_PAUSE_PRINT_PARKING           = _UxGT(MSG_1_LINE("停車中 ..."));   //"Parking..."
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INIT          = _UxGT(MSG_3_LINE("等待開始", "絲料", "變更"));     //"Wait for start of the filament change"
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_UNLOAD        = _UxGT(MSG_2_LINE("等待", "卸下絲料"));     //"Wait for filament unload"
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INSERT        = _UxGT(MSG_3_LINE("插入絲料", "並按鍵", "繼續 ..."));     //"Insert filament and press button to continue..."
@@ -564,7 +564,7 @@ namespace Language_zh_TW {
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_RESUME        = _UxGT(MSG_2_LINE("等待列印", "恢復"));     //"Wait for print to resume"
   #else // LCD_HEIGHT < 4
     PROGMEM Language_Str MSG_ADVANCED_PAUSE_WAITING        = _UxGT(MSG_1_LINE("按下繼續.."));   //"Click to continue"
-    PROGMEM Language_Str MSG_PAUSE_PRINT_INIT              = _UxGT(MSG_1_LINE("停車中 ..."));     //"Parking..."
+    PROGMEM Language_Str MSG_PAUSE_PRINT_PARKING           = _UxGT(MSG_1_LINE("停車中 ..."));     //"Parking..."
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INIT          = _UxGT(MSG_1_LINE("請等待 ..."));     //"Please wait..."
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INSERT        = _UxGT(MSG_1_LINE("插入並點擊"));     //"Insert and Click"
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEAT          = _UxGT(MSG_1_LINE("按下加熱.."));     //"Click to heat"

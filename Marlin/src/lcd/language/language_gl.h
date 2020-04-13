@@ -25,7 +25,7 @@
  * Galician language (ISO "gl")
  *
  * LCD Menu Messages
- * See also http://marlinfw.org/docs/development/lcd_language.html
+ * See also https://marlinfw.org/docs/development/lcd_language.html
  *
  */
 
@@ -189,8 +189,8 @@ namespace Language_gl {
   PROGMEM Language_Str MSG_UBL_STORAGE_SLOT                = _UxGT("Rañura Memoria");
   PROGMEM Language_Str MSG_UBL_LOAD_MESH                   = _UxGT("Cargar Malla Cama");
   PROGMEM Language_Str MSG_UBL_SAVE_MESH                   = _UxGT("Gardar Malla Cama");
-  PROGMEM Language_Str MSG_MESH_LOADED                     = _UxGT("M117 Malla %i Cargada");
-  PROGMEM Language_Str MSG_MESH_SAVED                      = _UxGT("M117 Malla %i Gardada");
+  PROGMEM Language_Str MSG_MESH_LOADED                     = _UxGT("Malla %i Cargada");
+  PROGMEM Language_Str MSG_MESH_SAVED                      = _UxGT("Malla %i Gardada");
   PROGMEM Language_Str MSG_UBL_NO_STORAGE                  = _UxGT("Sen Gardar");
   PROGMEM Language_Str MSG_UBL_SAVE_ERROR                  = _UxGT("Erro: Gardadado UBL");
   PROGMEM Language_Str MSG_UBL_RESTORE_ERROR               = _UxGT("Erro: Recuperación UBL");
@@ -558,7 +558,7 @@ namespace Language_gl {
 
   #if LCD_HEIGHT >= 4
     PROGMEM Language_Str MSG_ADVANCED_PAUSE_WAITING        = _UxGT(MSG_2_LINE("Preme o botón para", "continuar impresión"));
-    PROGMEM Language_Str MSG_PAUSE_PRINT_INIT              = _UxGT(MSG_1_LINE("Estacionando..."));
+    PROGMEM Language_Str MSG_PAUSE_PRINT_PARKING           = _UxGT(MSG_1_LINE("Estacionando..."));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INIT          = _UxGT(MSG_3_LINE("Agarde para", "comezar cambio", "de filamento"));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INSERT        = _UxGT(MSG_3_LINE("Introduza o", "filamento e", "faga click"));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEAT          = _UxGT(MSG_2_LINE("Prema o botón para", "quentar o bico"));
@@ -570,7 +570,7 @@ namespace Language_gl {
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_RESUME        = _UxGT(MSG_3_LINE("Agarde a que", "se retome", "a impresión"));
   #else
     PROGMEM Language_Str MSG_ADVANCED_PAUSE_WAITING        = _UxGT(MSG_1_LINE("Premer para continuar"));
-    PROGMEM Language_Str MSG_PAUSE_PRINT_INIT              = _UxGT(MSG_1_LINE("Estacionando..."));
+    PROGMEM Language_Str MSG_PAUSE_PRINT_PARKING           = _UxGT(MSG_1_LINE("Estacionando..."));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INIT          = _UxGT(MSG_1_LINE("Agarde..."));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_INSERT        = _UxGT(MSG_1_LINE("Introduza e click"));
     PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEAT          = _UxGT(MSG_1_LINE("Prema para quentar"));
