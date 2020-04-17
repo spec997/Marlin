@@ -38,17 +38,11 @@
 //
 #define DISABLE_DEBUG
 
-// SPI - EEPROM FLASH
-#define SPI_FLASH_EEPROM_EMULATION
-#define SPI_FLASH_EEPROM_OFFSET 0x700000
-#define SPI_FLASH_DEVICE 2
-#define SPI_FLASH_CS_PIN PB12
-
 //
 // EEPROM
 //
-//#define FLASH_EEPROM_EMULATION
-#define SDCARD_EEPROM_EMULATION
+#define FLASH_EEPROM_EMULATION
+//#define SDCARD_EEPROM_EMULATION
 
 //
 // Limit Switches
@@ -184,7 +178,7 @@
 #if ENABLED(FSMC_GRAPHICAL_TFT)
   #define FSMC_CS_PIN                       PD7   // NE4
   #define FSMC_RS_PIN                       PD11  // A0
-  
+
   #define LCD_USE_DMA_FSMC
   #define FSMC_DMA_DEV DMA2
   #define FSMC_DMA_CHANNEL DMA_CH5
