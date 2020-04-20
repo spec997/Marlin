@@ -158,12 +158,13 @@
 //
 // SD Card
 //
-#ifndef SDCARD_CONNECTION
-  #define SDCARD_CONNECTION              ONBOARD
-#endif
+//#ifndef SDCARD_CONNECTION
+//  #define SDCARD_CONNECTION              ONBOARD
+//#endif
 
 #define SDIO_SUPPORT
 #define SD_DETECT_PIN                       PD12
+//#define ONBOARD_SD_CS_PIN                   PC11
 
 //
 // LCD / Controller
