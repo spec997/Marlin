@@ -459,7 +459,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 350
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -512,10 +512,10 @@
   //#define DEFAULT_Ki 1.3
   //#define DEFAULT_Kd 61
 
-  // Sapphire Pro stock hotend with PT100 manually tuned
-  #define DEFAULT_Kp 19
+  // Sapphire Pro E3D V6 + Copper heatblock & nozzle with PT100 manually tuned
+  #define DEFAULT_Kp 25
   #define DEFAULT_Ki 2
-  #define DEFAULT_Kd 180
+  #define DEFAULT_Kd 200
 
 #endif // PIDTEMP
 
