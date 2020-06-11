@@ -202,20 +202,25 @@
 // LCD_FULL_PIXEL_WIDTH =
 // LCD_PIXEL_OFFSET_X + (LCD_PIXEL_WIDTH * 2) + LCD_PIXEL_OFFSET_X
 #if ENABLED(FSMC_GRAPHICAL_TFT)
-  //@ 2.8" TFT
-  // #define LCD_FULL_PIXEL_WIDTH  320
-  // #define LCD_PIXEL_OFFSET_X    32
-  // #define LCD_FULL_PIXEL_HEIGHT 240
-  // #define LCD_PIXEL_OFFSET_Y    32
-  //@ 3.5" TFT
-  #define LCD_FULL_PIXEL_WIDTH  480
-  #define LCD_PIXEL_OFFSET_X    48
-  #define LCD_FULL_PIXEL_HEIGHT 320
-  #define LCD_PIXEL_OFFSET_Y    32 // to leave at least 60px for UI
-  #if (FSMC_UPSCALE == 3)
-    extern uint16_t ui_color;
-    extern uint16_t bg_color;
-    extern void switchColorPreset(uint8_t preset);
+  #ifndef LCD_FULL_PIXEL_WIDTH
+    // #define LCD_FULL_PIXEL_WIDTH  320 @ 2.8" TFT
+    #define LCD_FULL_PIXEL_WIDTH  480
+  #endif
+  #ifndef LCD_PIXEL_OFFSET_X
+    // #define LCD_PIXEL_OFFSET_X    32 @ 2.8" TFT
+    #define LCD_PIXEL_OFFSET_X    48
+  #endif
+  #ifndef LCD_FULL_PIXEL_HEIGHT
+    // #define LCD_FULL_PIXEL_HEIGHT 240 @ 2.8" TFT
+    #define LCD_FULL_PIXEL_HEIGHT 320
+  #endif
+  #ifndef LCD_PIXEL_OFFSET_Y
+    #define LCD_PIXEL_OFFSET_Y    32
+    #if (FSMC_UPSCALE == 3)
+		extern uint16_t ui_color;
+		extern uint16_t bg_color;
+		extern void switchColorPreset(uint8_t preset);
+	#endif
   #endif
 #endif
 
