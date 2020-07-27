@@ -2419,7 +2419,7 @@
    * Define you own with
    * { <off_time[1..15]>, <hysteresis_end[-3..12]>, hysteresis_start[1..8] }
    */
-  #define CHOPPER_TIMING CHOPPER_DEFAULT_24V
+  #define CHOPPER_TIMING CHOPPER_PRUSAMK3_24V
 
   /**
    * Monitor Trinamic drivers
@@ -2540,7 +2540,14 @@
    *   stepperY.intpol(0); \
    * }
    */
-  #define TMC_ADV() {  }
+  #define TMC_ADV() { \
+      stepperX.toff(3); \
+      stepperX.hysteresis_end(-1); \
+      stepperX.hysteresis_start(5); \
+      stepperY.toff(3); \
+      stepperY.hysteresis_end(-1); \
+      stepperY.hysteresis_start(5); \
+  }
 
 #endif // HAS_TRINAMIC_CONFIG
 
